@@ -5,10 +5,12 @@ const ButtonList = () => {
   const list = ["All", "JavaScript", "DSA", "Music", "Live", "Algorithms", "Sports"];
 
   return (
-    <div className="flex ">
+    <div className="button-list-container overflow-x-scroll scrollbar-hide">
+    <div className="flex">
       {list.map((itemName, index) => (
         <Button key={index} name={itemName} />
       ))}
+    </div>
     </div>
   );
 };
