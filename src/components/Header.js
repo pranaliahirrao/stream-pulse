@@ -49,7 +49,7 @@ const Header = () => {
   };
 
   return (
-    <div className="grid grid-flow-col p-5 m-2 shadow-lg">
+    <div className="grid grid-flow-col p-5 m-2">
       <div className="flex col-span-1">
         <img
           // once you click it will call a callback function here
@@ -66,7 +66,7 @@ const Header = () => {
           />
         </a>
       </div>
-      <div className="col-span-10 px-10">
+      <div className="col-span-10 pl-20">
         <div className="relative">
           <input
             type="text"
@@ -81,7 +81,7 @@ const Header = () => {
           </button>
         </div>
         {showSuggestions && (
-          <div className="absolute bg-white py-2 px-2 w-[32rem] shadow-lg rounded-lg border border-gray-100">
+          <div className="absolute bg-white py-2 px-2 w-[50rem] shadow-lg rounded-lg border border-gray-100">
             <ul>
               {suggestions &&
                 suggestions.map((s) => (

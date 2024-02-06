@@ -7,7 +7,7 @@ const VideoCard = ({ info }) => {
     const viewsInMillions = (statistics.viewCount / 1000000).toFixed(2);
   
     return (
-      <div className="p-2 m-2 w-80 shadow-xl py-4">
+      <div className="p-2 m-2 w-96 shadow-lg py-4 h-[350px]">
         <img className="rounded-lg" alt="thumbnail" src={thumbnails.medium.url} />
         <ul>
           <li className="font-bold py-2">{title}</li>
